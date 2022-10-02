@@ -219,7 +219,7 @@ background-position:center;
   background-color: var(--primary-white-color);
 }
 
-section.work-icon{
+.section.work-icon{
   display: flex;
 }
 
@@ -411,15 +411,22 @@ justify-content: center;
 .list-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+   0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-item {
   display: inline-block;
   width: calc((100% - 2 * 30px) / 3);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  
+}
 
+.project-item:hover,
+.project-item:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-content {
@@ -451,7 +458,6 @@ justify-content: center;
 /* ---------------footer-----------------*/
 
 .footer {
-  /* display: flex; */
   background-color: var(--primary-bg-color);
   padding: 60px 0;
 }
@@ -528,10 +534,9 @@ justify-content: center;
   fill: var(--primary-white-color);
 }
 
-.footer.container{
+.footer .container{
 display: flex;
 align-items: baseline;
-padding: 0 15px;
 gap: 70px;
 }
 
@@ -539,4 +544,5 @@ gap: 70px;
   color: var(--primary-white-color);
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 700;
 }
